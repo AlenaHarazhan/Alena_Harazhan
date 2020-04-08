@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Просто сайт</title>
+	<style type="text/css">
+		body {
+            background-color: #acd2cd;
+			margin: 0;
+			margin-top: 10px;
+			font-family: Arial, Verdana, sans-serif;
+			font-size: 12px;
+			color: #000;
+		}
+
+		#wrap {
+			position: relative;
+			overflow: hidden;
+			margin: 0 auto;
+			width: 100%;
+			height: auto;
+		}
+
+		#nav {
+			border-top: 1px solid #fff;
+			border-bottom: 1px solid #fff;
+			background-color: #343940;
+			width: 100%;
+			height: 40px;
+			
+		}
+
+		#header {
+			width: 100%;
+			height: 150px;
+			margin-top: 0;
+
+		}
+		
+		#banner {
+			background-position: contain;
+			background-repeat: no-repeat;
+			width: 100%;
+			height: 130px;
+			
+		}
+		#banner h1{
+			margin: 0;
+			padding-top: 30px;
+			margin-left: 110px;
+			font-size: 45px;
+			font-style: bold;
+			color: #175464;
+		}
+		#nav ul {
+		 list-style-type: square;
+		 margin-left: 65px;
+         display: inline-block;
+		}
+		#nav li{
+		float:left;
+        list-style: none;
+        
+		}
+		#nav li a{
+		text-decoration: none;
+		
+		padding: 20px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		color: #fff; 
+		font-size: 14px;
+		}
+		#content {
+			width: 100%;
+			height: 500px;	
+			background-color:#fff;		
+
+		}
+		#left{
+			width: 30%;
+			height:450px;
+			float: left;
+			
+
+		}
+		#left div{
+			margin-left: 110px;
+			padding-top: 0px;
+
+			
+		}
+		#left h2{
+			margin: 0;
+			margin-top: 10px;
+			font-size: 18px;
+			font-style: bold;
+
+		}
+
+		#left p{
+			font-size: 10px;
+			margin-right: 20px;
+
+		}
+		#right{
+			width: 20%;
+			float: left;
+
+		}
+		#right div{
+			margin-left: 20px;
+			padding-top: 0px;
+			padding-right: 30px;
+
+		}
+		#right ul{
+			line-height: 20px;
+			font-size: 10px;
+			padding-left: 10px;
+
+		}
+		#right h1{
+			padding-left: 8px;
+			color:#343940;
+			padding-top: 0px;
+		}
+		#right p{
+			font-size: 10px;
+		}
+		#center{
+			width:40%;
+			height:450px;
+			float: left;
+			margin-left: 20px;
+		
+		}
+		#center div{
+			
+		}
+		#center h1{
+			font-size: 24px;
+			margin: 10px;
+			margin-top: 20px; 
+			color:#343940;
+
+		}
+		#center h2{
+			margin: 10px;
+			margin-top: 20px; 
+			color:#343940;
+
+		}
+		#center p{
+			font-size: 11px;
+			margin-right: 20px;
+			margin-top: 0;
+
+		}
+		#footer {
+			background-color: #343940;
+			width: 100%;
+			height: 70px;
+			float: left;
+			color: #fff;
+		}
+		#footer div {
+			padding-left: 110px;
+			padding-top: 10px;
+			padding-right: 110px;
+			font-size: 10px; 
+		}
+		a {
+			color: #fff;
+		}
+		* {box-sizing: border-box}
+
+.container {
+  padding: 16px;
+  color: #343940;
+}
+.container h1 {
+	color: #343940;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 15px;
+}
+
+.registerbtn {
+  background-color: #2fa9c9;
+  color: white;
+  padding: 10px 10px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+a {
+  color: gray;
+}
+
+
+	</style>
+</head>
+<body>
+	<div id="wrap">
+	<div id="header">
+	<div id="nav">
+		<ul>
+			<li><a href="#">О нас</a></li>
+			<li><a href="index.html">Контакты</a></li>
+			<li><a href="#">Новости</a></li>
+			<li><a href="#">Акции</a></li>
+			
+		</ul>
+	</div>
+	<div id="banner">
+		<h1>Lorem ipsum dolor</h1>
+	</div>
+	</div>
+	<div id="content">
+
+	<div id="left">
+		<div>
+			
+			<form action="action_page.php">
+				
+    <div class="container">
+
+    <h1>Регистрация</h1>
+    <p>Пожалуйста, заполните эту форму, чтобы создать учетную запись.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Введите ваш E-mail" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Введите пароль" name="psw" required>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Повторите пароль" name="psw-repeat" required>
+    <hr>
+
+    <button type="submit" class="registerbtn">Зарегистрироваться</button>
+  </div>
+
+  
+</form>
+		</div>
+	</div>
+
+	<div id="center">
+		<div>
+		<h1>Aliquam</h1>
+		<p>Phasellus auctor vitae velit in tincidunt. Donec malesuada risus ut sem rutrum hendrerit. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sit amet tempus nisl. Quisque vel dignissim lectus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut vitae lobortis massa, ut porttitor ex.</p>
+		<p>Suspendisse eleifend blandit accumsan. Aliquam vitae tincidunt justo, eu tempus nisl. Etiam mauris nunc, efficitur nec tortor nec, laoreet luctus diam. Aliquam ac dolor nunc. Duis suscipit dictum velit et tincidunt.</p>
+		<p>Etiam finibus arcu in felis eleifend, id elementum lacus convallis. In lacinia congue quam, id malesuada nunc porta nec. Maecenas eget nunc elementum, gravida nunc quis, facilisis diam. Aliquam metus tellus, semper ac imperdiet eu, ornare sit amet tortor. </p>
+		<h2>Donec ac tempus leo</h2>
+		<p>Sed euismod turpis nisi, id fringilla enim luctus in. Curabitur fringilla augue vitae posuere maximus. Pellentesque pulvinar hendrerit nisi ut luctus. Donec eu vestibulum metus, et mollis odio. Donec a ligula at nunc fermentum aliquet sed sed nisl. Cras risus neque, consectetur in vehicula molestie, rutrum pulvinar dui. In gravida ipsum sit amet eros feugiat, ac tristique urna placerat.</p>
+		<h2>Duis egestas nibh justo</h2>
+		<p>Phasellus sed metus vitae ex bibendum eleifend eu ac metus. Mauris eget imperdiet risus, quis porta risus. Suspendisse at justo pretium, hendrerit ex id, blandit elit. Vivamus erat elit, imperdiet id tellus a, eleifend vestibulum orci. Ut varius turpis id ipsum ornare pellentesque. Ut quis placerat ante, vel pulvinar orci. Integer elit quam, dignissim et nisl a, tincidunt euismod ex. Nunc at metus malesuada, viverra dolor sed, molestie tortor. Quisque id rhoncus nunc. Praesent eget ligula sapien. Praesent luctus eleifend dolor, a varius dolor feugiat sed. Vestibulum interdum nec ligula id placerat. Cras ultrices est tempus pulvinar convallis. Maecenas pretium metus at ex aliquet, at vulputate ipsum tempor. Pellentesque convallis pulvinar cursus.</p>
+		</div>
+	</div>
+
+	<div id="right">
+		<div>
+			<h1>Cras vestibulum</h1>
+			<ul>
+				<li>Lorem ipsum dolor sit amet.</li>
+				<li>Ut nec arcu in est molestie placerat.</li>
+				<li>Ut varius sem sed tincidunt tempor.</li>
+				<li>Nunc ac lacus a elit tincidunt.</li>
+				<li>Nam tincidunt lacus et nibh finibus.</li>
+				<li>Sed laoreet odio at placerat.</li>
+			</ul>
+			<p>Nullam sodales euismod mi, a venenatis erat rutrum eget. Proin ut commodo risus, eu rutrum erat. Cras scelerisque, tortor eget facilisis interdum, leo ante aliquam lorem, sed pretium erat nulla et neque. Vestibulum eu fringilla elit. Sed rutrum a mi ut aliquam. Quisque porta dui et congue bibendum. Pellentesque commodo nunc quis ex suscipit, nec pellentesque arcu aliquet.</p>
+			<p>Cras id augue in leo iaculis faucibus. In suscipit nibh et aliquam facilisis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse hendrerit ullamcorper urna, quis lacinia diam pretium id. Donec at purus a augue tempus vehicula a sit amet augue. Aliquam dolor mi, varius a odio a, fringilla volutpat urna. </p>
+			
+
+		</div>
+	</div>
+
+	<div id="footer">
+		<div>
+		2016, GeniusErEndDev, Inc. Suspendisse pellentesque augue porttitor eros dignissim, vitae mollis odio porttitor. Nullam sit amet diam sit amet tellus ullamcorper varius a vitae tellus. Suspendisse nec nisl lobortis, vehicula felis sed, ornare nulla. <br />
+		Контакты: <a href="#">genius@imaguru.co</a>
+	</div>
+	</div>
+		
+	</div>
+	<!-- content -->
+	</div>
+	<!-- wrap -->
+	</div>
+
+</body>
+</html>
